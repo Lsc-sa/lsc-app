@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:category_name",
+ "creation": "2024-09-05 16:33:00.067230",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ukid",
+  "category_name",
+  "parent_case_category",
+  "is_group",
+  "lft",
+  "rgt",
+  "old_parent",
+  "section_break_ztwz",
+  "attachments_column",
+  "attach_zufq"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ukid",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "category_name",
+   "fieldtype": "Data",
+   "label": "Category Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "parent_case_category",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Parent Case Category",
+   "options": "Case Categories"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Old Parent",
+   "options": "Case Categories"
+  },
+  {
+   "fieldname": "section_break_ztwz",
+   "fieldtype": "Section Break",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "attachments_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attach_zufq",
+   "fieldtype": "Attach"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_tree": 1,
+ "links": [],
+ "modified": "2024-09-05 16:33:15.937603",
+ "modified_by": "Administrator",
+ "module": "Lsc Api",
+ "name": "Case Categories",
+ "naming_rule": "By fieldname",
+ "nsm_parent_field": "parent_case_category",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

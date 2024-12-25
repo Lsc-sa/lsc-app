@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-09 14:04:13.251616",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "consultation_doctype_permissions_section",
+  "consultation_allowed_roles",
+  "case_doctype_permissions_section",
+  "case_allowed_roles",
+  "cases_study_doctype_permissions_section",
+  "casestudy_allowed_roles",
+  "legal_service_doctype_permissions_section",
+  "legal_service_allowed_roles",
+  "automatic_first_comment_upon_creation_section",
+  "comment_samples"
+ ],
+ "fields": [
+  {
+   "fieldname": "case_doctype_permissions_section",
+   "fieldtype": "Section Break",
+   "label": "Case Doctype Permissions"
+  },
+  {
+   "fieldname": "case_allowed_roles",
+   "fieldtype": "Table",
+   "label": "Allowed Roles",
+   "options": "Roles Table"
+  },
+  {
+   "fieldname": "consultation_doctype_permissions_section",
+   "fieldtype": "Section Break",
+   "label": "Consultation Doctype Permissions"
+  },
+  {
+   "fieldname": "consultation_allowed_roles",
+   "fieldtype": "Table",
+   "label": "Allowed Roles",
+   "options": "Roles Table"
+  },
+  {
+   "fieldname": "cases_study_doctype_permissions_section",
+   "fieldtype": "Section Break",
+   "label": "Cases Study Doctype Permissions"
+  },
+  {
+   "fieldname": "casestudy_allowed_roles",
+   "fieldtype": "Table",
+   "label": "Allowed Roles",
+   "options": "Roles Table"
+  },
+  {
+   "fieldname": "legal_service_doctype_permissions_section",
+   "fieldtype": "Section Break",
+   "label": "Legal Service Doctype Permissions"
+  },
+  {
+   "fieldname": "legal_service_allowed_roles",
+   "fieldtype": "Table",
+   "label": "Allowed Roles Copy",
+   "options": "Roles Table"
+  },
+  {
+   "fieldname": "automatic_first_comment_upon_creation_section",
+   "fieldtype": "Section Break",
+   "label": "Automatic First Comment Upon Creation"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "comment_samples",
+   "fieldtype": "Table",
+   "label": "Comment Samples",
+   "options": "Comment Samples"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-10-25 23:41:53.656795",
+ "modified_by": "Administrator",
+ "module": "Lsc Api",
+ "name": "Comment Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

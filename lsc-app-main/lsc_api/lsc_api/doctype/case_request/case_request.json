@@ -1,0 +1,162 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{case_title}{case_request_type}",
+ "creation": "2024-09-05 17:09:03.812279",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "case_title",
+  "case_request_type",
+  "case_request_in_najiz",
+  "status",
+  "court_ruling",
+  "number_of_judgment",
+  "ruling_text",
+  "case_information_column",
+  "customer_name",
+  "case_number_in_najiz",
+  "court_name",
+  "case_date",
+  "power_of_attorney",
+  "claim_parties_preview",
+  "section_break_trfp",
+  "subject_information"
+ ],
+ "fields": [
+  {
+   "fieldname": "case_title",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Case Title",
+   "options": "Case"
+  },
+  {
+   "fieldname": "case_request_type",
+   "fieldtype": "Select",
+   "label": "Case Request Type",
+   "options": "\u0646\u0645\u0648\u0630\u062c \u062a\u0635\u062d\u064a\u062d \u062d\u0643\u0645\n\u0646\u0645\u0648\u0630\u062c \u0637\u0639\u0646 \u0627\u0644\u0646\u0642\u0636\n\u0646\u0645\u0648\u0630\u062c \u0644\u0627\u0626\u062d\u0629 \u0625\u0639\u062a\u0631\u0627\u0636\u064a\u0629\n\u0646\u0645\u0648\u0630\u062c \u0644\u0627\u0626\u062d\u0629 \u062a\u062d\u0631\u064a\u0631 \u062f\u0639\u0648\u0649\n\u0645\u0630\u0643\u0631\u0629 \u062c\u0648\u0627\u0628\u064a\u0629"
+  },
+  {
+   "fieldname": "case_request_in_najiz",
+   "fieldtype": "Data",
+   "label": "Case Request in Najiz"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Cases Request Status"
+  },
+  {
+   "fieldname": "court_ruling",
+   "fieldtype": "Link",
+   "label": "Court Ruling",
+   "options": "Courts Ruling"
+  },
+  {
+   "fetch_from": "court_ruling.number_of_judgement",
+   "fieldname": "number_of_judgment",
+   "fieldtype": "Data",
+   "label": "Number of Judgment"
+  },
+  {
+   "fetch_from": "court_ruling.ruling_text",
+   "fieldname": "ruling_text",
+   "fieldtype": "Small Text",
+   "label": "Ruling Text",
+   "read_only": 1
+  },
+  {
+   "fieldname": "case_information_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "case_title.client_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Customer Name",
+   "options": "Customer",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "case_title.case_number_najiz",
+   "fieldname": "case_number_in_najiz",
+   "fieldtype": "Data",
+   "label": "Case Number in Najiz",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "case_title.court_id",
+   "fieldname": "court_name",
+   "fieldtype": "Link",
+   "label": "Court Name",
+   "options": "Courts",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "case_title.datetime_wzps",
+   "fieldname": "case_date",
+   "fieldtype": "Date",
+   "label": "Case Date",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "case_title.power_of_attorney",
+   "fieldname": "power_of_attorney",
+   "fieldtype": "Link",
+   "label": "Power of Attorney",
+   "options": "Power of Attornies",
+   "read_only": 1
+  },
+  {
+   "fieldname": "claim_parties_preview",
+   "fieldtype": "HTML",
+   "label": "Claim Parties"
+  },
+  {
+   "fieldname": "section_break_trfp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "subject_information",
+   "fieldtype": "Text Editor"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-27 00:08:39.303268",
+ "modified_by": "Administrator",
+ "module": "Lsc Api",
+ "name": "Case Request",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:court_name",
+ "creation": "2024-09-15 11:38:11.094920",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_qwcf",
+  "court_name",
+  "parent_court",
+  "court_description",
+  "is_group",
+  "lft",
+  "rgt",
+  "old_parent",
+  "attachments_section",
+  "attach_fskr",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_qwcf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "court_name",
+   "fieldtype": "Data",
+   "label": "Court Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "parent_court",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Parent Court",
+   "options": "Courts"
+  },
+  {
+   "fieldname": "court_description",
+   "fieldtype": "Small Text",
+   "label": "Court Description"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Old Parent",
+   "options": "Courts"
+  },
+  {
+   "fieldname": "attachments_section",
+   "fieldtype": "Section Break",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "attach_fskr",
+   "fieldtype": "Attach"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Courts",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_tree": 1,
+ "links": [],
+ "modified": "2024-12-03 16:57:22.331017",
+ "modified_by": "Administrator",
+ "module": "Lsc Api",
+ "name": "Courts",
+ "naming_rule": "By fieldname",
+ "nsm_parent_field": "parent_court",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:appointment_type",
+ "creation": "2024-09-08 09:32:49.220929",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "appointment_type",
+  "default_duration",
+  "allow_booking_for",
+  "column_break_jdo1",
+  "color",
+  "billing_tab",
+  "price_list",
+  "items"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "appointment_type",
+   "fieldtype": "Data",
+   "ignore_xss_filter": 1,
+   "in_list_view": 1,
+   "label": "Type",
+   "reqd": 1,
+   "translatable": 1,
+   "unique": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "bold": 1,
+   "fieldname": "default_duration",
+   "fieldtype": "Int",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "label": "Default Duration (In Minutes)"
+  },
+  {
+   "default": "Employee",
+   "fieldname": "allow_booking_for",
+   "fieldtype": "Select",
+   "label": "Allow Booking For",
+   "options": "Employee\nDepartment\nService Unit",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_jdo1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "color",
+   "fieldtype": "Color",
+   "in_list_view": 1,
+   "label": "Color",
+   "no_copy": 1,
+   "report_hide": 1
+  },
+  {
+   "fieldname": "billing_tab",
+   "fieldtype": "Tab Break",
+   "label": "Billing"
+  },
+  {
+   "fieldname": "price_list",
+   "fieldtype": "Link",
+   "label": "Price List",
+   "options": "Price List"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Appointment Type Service Items",
+   "options": "Appointment Type Service Item"
+  }
+ ],
+ "links": [],
+ "modified": "2024-09-27 00:08:37.951276",
+ "modified_by": "Administrator",
+ "module": "Lsc Api",
+ "name": "Employee Appointment Type",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "restrict_to_domain": "Healthcare",
+ "search_fields": "appointment_type",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

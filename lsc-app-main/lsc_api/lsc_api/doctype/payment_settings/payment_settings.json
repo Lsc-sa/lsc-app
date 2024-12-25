@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-06 17:07:54.964182",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "use_live",
+  "test_secret_key",
+  "live_secret_key"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "use_live",
+   "fieldtype": "Check",
+   "label": "Use Live"
+  },
+  {
+   "fieldname": "test_secret_key",
+   "fieldtype": "Data",
+   "label": "Test Secret Key"
+  },
+  {
+   "fieldname": "live_secret_key",
+   "fieldtype": "Data",
+   "label": "Live Secret Key"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-11-06 17:08:42.407869",
+ "modified_by": "Administrator",
+ "module": "Lsc Api",
+ "name": "Payment Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

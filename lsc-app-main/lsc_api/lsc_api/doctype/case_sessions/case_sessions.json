@@ -1,0 +1,197 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{case_name}-{####}",
+ "creation": "2024-09-05 17:31:05.711257",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "session_details_section",
+  "column_break_fggx",
+  "case_name",
+  "client",
+  "lawyer_name",
+  "court_name",
+  "department",
+  "session_date",
+  "session_time",
+  "column_break_ltjz",
+  "employee_appointment_type",
+  "minutes",
+  "session_end_time",
+  "session_status",
+  "rulling",
+  "attendance_mechanism",
+  "meeting_link",
+  "meeting_subject",
+  "attendance_pleading",
+  "section_break_ejkf",
+  "table_vili"
+ ],
+ "fields": [
+  {
+   "fieldname": "session_details_section",
+   "fieldtype": "Section Break",
+   "label": "Session Details"
+  },
+  {
+   "fieldname": "column_break_fggx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "case_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Case",
+   "options": "Case"
+  },
+  {
+   "fieldname": "lawyer_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee",
+   "link_filters": "[[\"Employee\",\"designation\",\"in\",[\"\u0645\u062d\u0627\u0645\u064a \u0645\u062a\u062f\u0631\u0628\",\"\u0645\u062d\u0627\u0645\u064a\",\"\u0628\u0627\u062d\u062b \u0642\u0627\u0646\u0648\u0646\u064a\"]]]",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "court_name",
+   "fieldtype": "Link",
+   "label": "Court Name",
+   "options": "Courts"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Judicial Department",
+   "options": "Judiciall Department"
+  },
+  {
+   "fieldname": "session_date",
+   "fieldtype": "Date",
+   "label": "Session Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "session_time",
+   "fieldtype": "Time",
+   "label": "Session Start Time",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "event.starts_on",
+   "fieldname": "session_end_time",
+   "fieldtype": "Data",
+   "label": "Session End Time"
+  },
+  {
+   "fieldname": "session_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Session Status",
+   "options": "\u062c\u0644\u0633\u0629 \u062c\u062f\u064a\u062f\u0629\n\u0642\u064a\u062f \u0627\u0644\u0625\u0646\u0639\u0642\u0627\u062f\n\u0645\u0646\u062a\u0647\u064a\u0629"
+  },
+  {
+   "fieldname": "rulling",
+   "fieldtype": "Data",
+   "label": "Rulling"
+  },
+  {
+   "fieldname": "attendance_mechanism",
+   "fieldtype": "Select",
+   "label": "Attendance Mechanism",
+   "options": "\u062d\u0636\u0648\u0631\u064a\n\u0639\u0628\u0631 \u0627\u0644\u0625\u062a\u0635\u0627\u0644 \u0627\u0644\u0645\u0631\u0626\u064a"
+  },
+  {
+   "fieldname": "meeting_link",
+   "fieldtype": "Data",
+   "label": "Meeting Link"
+  },
+  {
+   "fieldname": "meeting_subject",
+   "fieldtype": "Data",
+   "label": "Meeting Subject"
+  },
+  {
+   "fieldname": "attendance_pleading",
+   "fieldtype": "Small Text",
+   "label": "Attendance Pleading"
+  },
+  {
+   "fieldname": "section_break_ejkf",
+   "fieldtype": "Section Break",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "table_vili",
+   "fieldtype": "Table",
+   "options": "Attachment"
+  },
+  {
+   "fieldname": "employee_appointment_type",
+   "fieldtype": "Link",
+   "label": "Employee Appointment Type",
+   "options": "Employee Appointment Type",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee_appointment_type.default_duration",
+   "fieldname": "minutes",
+   "fieldtype": "Data",
+   "label": "Minutes"
+  },
+  {
+   "fetch_from": "case_name.client",
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "label": "Client",
+   "options": "Customer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ltjz",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_calendar_and_gantt": 1,
+ "links": [
+  {
+   "link_doctype": "Employee Appointment",
+   "link_fieldname": "case_session"
+  }
+ ],
+ "modified": "2024-12-16 14:51:33.675411",
+ "modified_by": "Administrator",
+ "module": "Lsc Api",
+ "name": "Case Sessions",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

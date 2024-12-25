@@ -1,0 +1,183 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{client}-{####}",
+ "creation": "2024-09-02 21:03:52.776845",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "client",
+  "poa_exp_date",
+  "status",
+  "transaction_type",
+  "description",
+  "column_break_gmdx",
+  "item",
+  "employee",
+  "on_hold_date",
+  "branch",
+  "client_rating",
+  "client_feedback",
+  "on_hold_check",
+  "section_break_nlhs",
+  "attatchments"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Client",
+   "options": "Customer"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "New\nIn Progress\nOn Hold\nDone\nRefund\nCancelled",
+   "read_only_depends_on": "eval: doc.status == \"Refund\";",
+   "translatable": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_gmdx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "The Service",
+   "link_filters": "[]",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fetch_from": "client.custom_branch",
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "fetch_from": "client.custom_client_rating",
+   "fieldname": "client_rating",
+   "fieldtype": "Rating",
+   "label": "Client Rating"
+  },
+  {
+   "fieldname": "client_feedback",
+   "fieldtype": "Small Text",
+   "label": "Client Feedback"
+  },
+  {
+   "fieldname": "section_break_nlhs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "attatchments",
+   "fieldtype": "Table",
+   "label": "Attatchments",
+   "options": "Attachment"
+  },
+  {
+   "fetch_from": "item.item_group",
+   "fieldname": "transaction_type",
+   "fieldtype": "Link",
+   "label": "Transaction Type",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "poa_exp_date",
+   "fieldtype": "Date",
+   "label": "Expiration Date of Power of Attorny",
+   "read_only": 1
+  },
+  {
+   "fieldname": "on_hold_date",
+   "fieldtype": "Date",
+   "label": "On Hold Date"
+  },
+  {
+   "default": "0",
+   "fieldname": "on_hold_check",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "On Hold for too long",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Case",
+   "link_fieldname": "client_transaction"
+  },
+  {
+   "link_doctype": "Cases Study",
+   "link_fieldname": "client_transaction"
+  },
+  {
+   "link_doctype": "Consultation",
+   "link_fieldname": "client_transaction"
+  },
+  {
+   "link_doctype": "Legal Service",
+   "link_fieldname": "client_transaction"
+  }
+ ],
+ "modified": "2024-12-04 08:21:32.063473",
+ "modified_by": "Administrator",
+ "module": "Lsc Api",
+ "name": "Client Transaction",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-28 11:13:10.212638",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "use_live",
+  "test_webhook",
+  "live_webhook"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "use_live",
+   "fieldtype": "Check",
+   "label": "Use Live"
+  },
+  {
+   "fieldname": "test_webhook",
+   "fieldtype": "Data",
+   "label": "Test Webhook"
+  },
+  {
+   "fieldname": "live_webhook",
+   "fieldtype": "Data",
+   "label": "Live Webhook"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-11-28 11:16:37.486912",
+ "modified_by": "Administrator",
+ "module": "Lsc Api",
+ "name": "ChatGPT Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,178 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{client}-{####}",
+ "creation": "2024-09-05 17:21:24.886116",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "end_section",
+  "client_transaction",
+  "client_transaction_status",
+  "consultation_type",
+  "status",
+  "start_time",
+  "end_time",
+  "column_break_heyx",
+  "client",
+  "client_name",
+  "branch",
+  "legal_advisor_title",
+  "legal_advisor_description",
+  "datetime",
+  "date",
+  "due_date",
+  "section_break_iedm",
+  "table_sifh"
+ ],
+ "fields": [
+  {
+   "fieldname": "end_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "client_transaction",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Client Transaction",
+   "link_filters": "[[\"Client Transactions\",\"creation\",\"Timespan\",\"today\"]]",
+   "no_copy": 1,
+   "options": "Client Transaction",
+   "reqd": 1,
+   "set_only_once": 1,
+   "unique": 1
+  },
+  {
+   "fetch_from": "client_transaction.client",
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Client",
+   "options": "Customer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "legal_advisor_title",
+   "fieldtype": "Data",
+   "label": "Legal Advise Title"
+  },
+  {
+   "fieldname": "legal_advisor_description",
+   "fieldtype": "Data",
+   "label": "Legal Advise Description"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "\u062c\u062f\u064a\u062f\n\u0642\u064a\u062f \u0627\u0644\u062a\u0646\u0641\u064a\u0630\n\u062a\u0645 \u0627\u0644\u062a\u0646\u0641\u064a\u0630\n\u0631\u0641\u0636\u062a"
+  },
+  {
+   "fieldname": "consultation_type",
+   "fieldtype": "Select",
+   "label": "Consultation Type",
+   "options": "\u0639\u0646 \u0628\u0639\u062f\n\u062d\u0636\u0648\u0631\u064a\n\u0639\u0628\u0631 \u0627\u0644\u0628\u0631\u064a\u062f \u0627\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a"
+  },
+  {
+   "fieldname": "datetime",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Date/Time",
+   "options": "Event"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Data",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Data",
+   "label": "End Time"
+  },
+  {
+   "fieldname": "section_break_iedm",
+   "fieldtype": "Section Break",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "table_sifh",
+   "fieldtype": "Table",
+   "label": "test",
+   "options": "Attachment"
+  },
+  {
+   "fetch_from": "client_transaction.status",
+   "fieldname": "client_transaction_status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Client Transaction Status",
+   "link_filters": "[[\"Client Transactions\",\"creation\",\"Timespan\",\"today\"]]"
+  },
+  {
+   "fieldname": "column_break_heyx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "label": "Due Date"
+  },
+  {
+   "fetch_from": "client.custom_branch",
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "fetch_from": "client.customer_name",
+   "fieldname": "client_name",
+   "fieldtype": "Data",
+   "label": "Client Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_calendar_and_gantt": 1,
+ "links": [
+  {
+   "link_doctype": "Employee Appointment",
+   "link_fieldname": "consultation"
+  }
+ ],
+ "modified": "2024-12-08 09:29:43.255729",
+ "modified_by": "Administrator",
+ "module": "Lsc Api",
+ "name": "Consultation",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

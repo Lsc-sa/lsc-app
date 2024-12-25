@@ -1,0 +1,103 @@
+{
+ "charts": [
+  {
+   "chart_name": "Client Orders",
+   "label": "Client Transaction"
+  },
+  {
+   "chart_name": "Client Transaction Type",
+   "label": "Client Transaction Type"
+  }
+ ],
+ "content": "[{\"id\":\"yZOPVSX4Yf\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Transactions\",\"col\":3}},{\"id\":\"4Fjbd1SZZn\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"In Progress Transactions\",\"col\":3}},{\"id\":\"U91ZEJOd6g\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"On Hold Transactions\",\"col\":3}},{\"id\":\"rLrX7hE-5R\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Refund Transactions\",\"col\":3}},{\"id\":\"R9GXnHCqBV\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Done Transactions\",\"col\":3}},{\"id\":\"gC1j-j2GDg\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Cancelled Transactions\",\"col\":3}},{\"id\":\"WUgW-Gndj8\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"aPgv2dT1F6\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Overall Client Transactions\",\"col\":6}},{\"id\":\"LPE_d9QrhY\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Client Transaction Type\",\"col\":6}},{\"id\":\"N34OXOZV9J\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Client Transaction\",\"col\":6}},{\"id\":\"jStk7CYAR5\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Client Transaction\",\"col\":6}}]",
+ "creation": "2024-12-01 15:42:53.138664",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "hide_custom": 0,
+ "icon": "share",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Clients Transaction List",
+ "links": [],
+ "modified": "2024-12-16 16:24:18.142323",
+ "modified_by": "omar@lsc-sa.net",
+ "module": "Lsc Api",
+ "name": "Clients Transaction List",
+ "number_cards": [
+  {
+   "label": "Overall Client Transactions",
+   "number_card_name": "Client Transactions"
+  }
+ ],
+ "owner": "Administrator",
+ "public": 1,
+ "quick_lists": [
+  {
+   "document_type": "Client Transaction",
+   "label": "Client Transaction",
+   "quick_list_filter": "[]"
+  }
+ ],
+ "roles": [
+  {
+   "role": "System Admin"
+  },
+  {
+   "role": "All"
+  }
+ ],
+ "sequence_id": 13.0,
+ "shortcuts": [
+  {
+   "color": "Red",
+   "doc_view": "List",
+   "label": "On Hold Transactions",
+   "link_to": "Client Transaction",
+   "stats_filter": "[[\"Client Transaction\",\"status\",\"=\",\"On Hold\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Done Transactions",
+   "link_to": "Client Transaction",
+   "stats_filter": "[[\"Client Transaction\",\"status\",\"=\",\"Done\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Cyan",
+   "doc_view": "List",
+   "label": "Cancelled Transactions",
+   "link_to": "Client Transaction",
+   "stats_filter": "[[\"Client Transaction\",\"status\",\"=\",\"Cancelled\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "New Transactions",
+   "link_to": "Client Transaction",
+   "stats_filter": "[[\"Client Transaction\",\"status\",\"=\",\"New\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Pink",
+   "doc_view": "List",
+   "label": "In Progress Transactions",
+   "link_to": "Client Transaction",
+   "stats_filter": "[[\"Client Transaction\",\"status\",\"=\",\"In Progress\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Refund Transactions",
+   "link_to": "Client Transaction",
+   "stats_filter": "[[\"Client Transaction\",\"status\",\"=\",\"Refund\",false]]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Clients Transaction List"
+}

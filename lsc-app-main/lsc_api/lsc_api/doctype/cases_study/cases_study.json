@@ -1,0 +1,205 @@
+{
+ "actions": [],
+ "autoname": "format:{case_study_title}-{####}",
+ "creation": "2024-09-05 15:56:35.953618",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "case_information_section",
+  "client_transaction",
+  "client_transaction_status",
+  "branch",
+  "case_study_title",
+  "client",
+  "lawyer_name",
+  "case_description",
+  "satus",
+  "case_facts",
+  "points_of_strength",
+  "points_of_weakness",
+  "legal_foundations",
+  "expected_time_and_effort",
+  "legal_opinion",
+  "competent_court",
+  "juridical_costs",
+  "recommendations",
+  "proposed_fees",
+  "use_ai",
+  "claim_parties_section",
+  "table_wqnv",
+  "section_break_nsdu",
+  "table_aexy"
+ ],
+ "fields": [
+  {
+   "fieldname": "case_information_section",
+   "fieldtype": "Section Break",
+   "label": "Case Information"
+  },
+  {
+   "fieldname": "client_transaction",
+   "fieldtype": "Link",
+   "label": "Client Transaction",
+   "options": "Client Transaction",
+   "reqd": 1
+  },
+  {
+   "fieldname": "case_study_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Case Study Title"
+  },
+  {
+   "fetch_from": "client_transaction.client",
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Client",
+   "options": "Customer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "lawyer_name",
+   "fieldtype": "Link",
+   "label": "Lawyer Name",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "case_description",
+   "fieldtype": "Small Text",
+   "label": "Case Description"
+  },
+  {
+   "fieldname": "satus",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "\u062f\u0631\u0627\u0633\u0629 \u0627\u0648\u0644\u064a\u0629 \u062c\u062f\u064a\u062f\u0629\n\u062f\u0631\u0627\u0633\u0629 \u0627\u0648\u0644\u064a\u0629 \u0641\u064a \u0627\u0646\u062a\u0638\u0627\u0631 \u0642\u0631\u0627\u0631 \u0627\u0644\u0639\u0645\u064a\u0644\n\u062f\u0631\u0627\u0633\u0629 \u0627\u0648\u0644\u064a\u0629 \u062a\u0645 \u0627\u0644\u0645\u0648\u0627\u0641\u0642\u0629 \u0639\u0644\u064a\u0647\u0627\n\u062f\u0631\u0627\u0633\u0629 \u0627\u0648\u0644\u064a\u0629 \u062a\u0645 \u0631\u0641\u0636\u0647\u0627"
+  },
+  {
+   "fieldname": "case_facts",
+   "fieldtype": "Small Text",
+   "label": "Case Facts"
+  },
+  {
+   "fieldname": "points_of_strength",
+   "fieldtype": "Small Text",
+   "label": "Points of Strength"
+  },
+  {
+   "fieldname": "points_of_weakness",
+   "fieldtype": "Small Text",
+   "label": "Points of Weakness"
+  },
+  {
+   "fieldname": "legal_foundations",
+   "fieldtype": "Text",
+   "label": "Legal Foundations"
+  },
+  {
+   "fieldname": "expected_time_and_effort",
+   "fieldtype": "Data",
+   "label": "Expected Time and Effort"
+  },
+  {
+   "fieldname": "legal_opinion",
+   "fieldtype": "Small Text",
+   "label": "Legal Opinion"
+  },
+  {
+   "fieldname": "competent_court",
+   "fieldtype": "Link",
+   "label": "Competent Court",
+   "options": "Courts"
+  },
+  {
+   "fieldname": "juridical_costs",
+   "fieldtype": "Small Text",
+   "label": "Juridical costs"
+  },
+  {
+   "fieldname": "recommendations",
+   "fieldtype": "Small Text",
+   "label": "Recommendations"
+  },
+  {
+   "fieldname": "proposed_fees",
+   "fieldtype": "Currency",
+   "label": "Proposed fees",
+   "precision": "0"
+  },
+  {
+   "fieldname": "claim_parties_section",
+   "fieldtype": "Section Break",
+   "label": "Claim Parties"
+  },
+  {
+   "fieldname": "table_wqnv",
+   "fieldtype": "Table",
+   "options": "Claim Party"
+  },
+  {
+   "fieldname": "section_break_nsdu",
+   "fieldtype": "Section Break",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "table_aexy",
+   "fieldtype": "Table",
+   "options": "Attachment"
+  },
+  {
+   "fetch_from": "client_transaction.status",
+   "fieldname": "client_transaction_status",
+   "fieldtype": "Data",
+   "label": "Client Transaction Status",
+   "options": "New\nIn Progress\nOn Hold\nDone\nRefund\nCancelled"
+  },
+  {
+   "fetch_from": "client_transaction.branch",
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "default": "1",
+   "fieldname": "use_ai",
+   "fieldtype": "Check",
+   "label": "Use AI"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-04 08:21:28.960946",
+ "modified_by": "Administrator",
+ "module": "Lsc Api",
+ "name": "Cases Study",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

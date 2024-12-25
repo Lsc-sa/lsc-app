@@ -1,0 +1,121 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{client_transaction}-{client}",
+ "creation": "2024-09-15 11:40:08.397006",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "client_transaction",
+  "client_transaction_status",
+  "client",
+  "branch",
+  "status",
+  "services_type",
+  "description",
+  "attachements",
+  "use_ai"
+ ],
+ "fields": [
+  {
+   "fieldname": "client_transaction",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Client Transaction",
+   "link_filters": "[[\"Client Transactions\",\"creation\",\"Timespan\",\"today\"]]",
+   "no_copy": 1,
+   "options": "Client Transaction",
+   "reqd": 1,
+   "set_only_once": 1,
+   "unique": 1
+  },
+  {
+   "fetch_from": "client_transaction.client",
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Client",
+   "options": "Customer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\u062c\u062f\u064a\u062f\n\u0642\u064a\u062f \u0627\u0644\u062a\u0646\u0641\u064a\u0630\n\u062a\u0645 \u0627\u0644\u062a\u0646\u0641\u064a\u0630\n\u0631\u0641\u0636\u062a"
+  },
+  {
+   "fieldname": "services_type",
+   "fieldtype": "Link",
+   "label": "Services type",
+   "options": "Legal Service Types"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "attachements",
+   "fieldtype": "Table",
+   "label": "Attachements",
+   "options": "Attachment"
+  },
+  {
+   "fetch_from": "client_transaction.status",
+   "fieldname": "client_transaction_status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Client Transaction Status",
+   "link_filters": "[[\"Client Transactions\",\"creation\",\"Timespan\",\"today\"]]"
+  },
+  {
+   "default": "1",
+   "fieldname": "use_ai",
+   "fieldtype": "Check",
+   "label": "Use AI"
+  },
+  {
+   "fetch_from": "client.custom_branch",
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-08 09:32:16.108038",
+ "modified_by": "Administrator",
+ "module": "Lsc Api",
+ "name": "Legal Service",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_views": 1
+}

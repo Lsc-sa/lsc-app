@@ -1,0 +1,42 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-05 17:36:36.843785",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "service_settings"
+ ],
+ "fields": [
+  {
+   "fieldname": "service_settings",
+   "fieldtype": "Table",
+   "label": "Service Settings",
+   "options": "Service Setting"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-09-27 00:08:38.421993",
+ "modified_by": "Administrator",
+ "module": "Lsc Api",
+ "name": "Plans Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

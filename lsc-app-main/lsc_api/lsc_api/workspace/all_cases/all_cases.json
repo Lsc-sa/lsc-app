@@ -1,0 +1,99 @@
+{
+ "charts": [
+  {
+   "chart_name": "Cases Status",
+   "label": "Cases Status"
+  },
+  {
+   "chart_name": "Cases",
+   "label": "All Cases"
+  }
+ ],
+ "content": "[{\"id\":\"0ypP63g0OZ\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"All Cases\",\"col\":3}},{\"id\":\"2t3IsAXhQw\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Case Sessions\",\"col\":3}},{\"id\":\"bh2gE80a4u\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Case Enforcement\",\"col\":3}},{\"id\":\"tuOhRQuUeo\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Case Request\",\"col\":3}},{\"id\":\"mSXEi9iW7L\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Statment of Claims\",\"col\":3}},{\"id\":\"n510WlhPf-\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Court Rouling\",\"col\":3}},{\"id\":\"NCWiRVNCDc\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"2OC4r3bfj0\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"New Cases\",\"col\":3}},{\"id\":\"ey-9Q5iWz5\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"In Progress Cases\",\"col\":3}},{\"id\":\"AZ_-ZmDDZc\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Implemented Cases\",\"col\":3}},{\"id\":\"OPTwtB2bIz\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Rejected Cases\",\"col\":3}},{\"id\":\"VXSv8_FmO7\",\"type\":\"chart\",\"data\":{\"chart_name\":\"All Cases\",\"col\":6}},{\"id\":\"xvfqQjZ1Yu\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Cases Status\",\"col\":6}},{\"id\":\"j7wOY2h1Ww\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"y4C-UhI5lE\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Cases\",\"col\":12}}]",
+ "creation": "2024-12-01 15:42:53.325418",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "hide_custom": 0,
+ "icon": "project",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "All Cases",
+ "links": [],
+ "modified": "2024-12-16 16:11:28.854014",
+ "modified_by": "omar@lsc-sa.net",
+ "module": "Lsc Api",
+ "name": "All Cases",
+ "number_cards": [
+  {
+   "label": "New Cases",
+   "number_card_name": "New Cases"
+  },
+  {
+   "label": "Case Sessions",
+   "number_card_name": "Total Case Sessions"
+  },
+  {
+   "label": "Implemented Cases",
+   "number_card_name": "Implemented Cases"
+  },
+  {
+   "label": "In Progress Cases",
+   "number_card_name": "In Progress Cases"
+  },
+  {
+   "label": "All Cases",
+   "number_card_name": "cases"
+  },
+  {
+   "label": "Case Enforcement",
+   "number_card_name": "Case Enforcement"
+  },
+  {
+   "label": "Case Request",
+   "number_card_name": "Case Request"
+  },
+  {
+   "label": "Statment of Claims",
+   "number_card_name": "Statment of Claims"
+  },
+  {
+   "label": "Rejected Cases",
+   "number_card_name": "Rejected Cases"
+  },
+  {
+   "label": "Court Rouling",
+   "number_card_name": "Court Rouling"
+  }
+ ],
+ "owner": "Administrator",
+ "public": 1,
+ "quick_lists": [
+  {
+   "document_type": "Case",
+   "label": "Cases",
+   "quick_list_filter": "[]"
+  }
+ ],
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "\u0645\u062f\u064a\u0631 \u0642\u0633\u0645 \u0627\u0644\u062a\u0642\u0627\u0636\u064a"
+  },
+  {
+   "role": "\u0645\u062d\u0627\u0645\u064a"
+  },
+  {
+   "role": "\u0645\u062d\u0627\u0645\u064a \u0645\u062a\u062f\u0631\u0628"
+  },
+  {
+   "role": "System Admin"
+  }
+ ],
+ "sequence_id": 3.0,
+ "shortcuts": [],
+ "title": "All Cases"
+}

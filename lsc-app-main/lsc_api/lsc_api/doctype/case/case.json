@@ -1,0 +1,299 @@
+{
+ "actions": [],
+ "autoname": "format:{case_name}-{####}",
+ "creation": "2024-09-05 16:36:23.281308",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_tmdi",
+  "client_transaction",
+  "client_transaction_status",
+  "case_name",
+  "department",
+  "datetime_wzps",
+  "status",
+  "statement_of_claim",
+  "case_study",
+  "archive_status",
+  "case_description",
+  "column_break_eare",
+  "client",
+  "branch",
+  "raised_at",
+  "court_id",
+  "case_number_najiz",
+  "power_of_attorney",
+  "lawyer_name",
+  "amended_from",
+  "last_synced_comment_time",
+  "case_parties_section",
+  "claim_parties",
+  "attachements_section",
+  "table_wesy",
+  "only_admin_with_privileges_can_achieve_cases_section",
+  "column_break_ckoz",
+  "archived",
+  "archive",
+  "column_break_cmzm",
+  "reason"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_tmdi",
+   "fieldtype": "Section Break",
+   "label": "Case Information"
+  },
+  {
+   "fieldname": "client_transaction",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Client Transaction",
+   "link_filters": "[[\"Client Transactions\",\"creation\",\"Timespan\",\"today\"]]",
+   "no_copy": 1,
+   "options": "Client Transaction",
+   "reqd": 1,
+   "set_only_once": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "case_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Case Title"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Department",
+   "options": "\u0642\u0636\u064a\u0629 \u062c\u0646\u0627\u0626\u064a\u0629\n\u0642\u0636\u064a\u0629 \u0639\u0645\u0627\u0644\u064a\u0629\n\u0642\u0636\u064a\u0629 \u0627\u062d\u0648\u0627\u0644 \u0634\u062e\u0635\u064a\u0629\n\u0642\u0636\u064a\u0629 \u0639\u0627\u0645\u0629"
+  },
+  {
+   "fieldname": "datetime_wzps",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Case Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Case Status",
+   "options": "\u062c\u062f\u064a\u062f\n\u0642\u064a\u062f \u0627\u0644\u062a\u0646\u0641\u064a\u0630\n\u062a\u0645 \u0627\u0644\u062a\u0646\u0641\u064a\u0630\n\u0631\u0641\u0636\u062a"
+  },
+  {
+   "fieldname": "statement_of_claim",
+   "fieldtype": "Link",
+   "label": "Statement of Claim",
+   "options": "Statement of Claims"
+  },
+  {
+   "fieldname": "case_study",
+   "fieldtype": "Link",
+   "label": "Case Study",
+   "options": "Cases Study"
+  },
+  {
+   "fieldname": "archive_status",
+   "fieldtype": "Data",
+   "label": "Archive Status"
+  },
+  {
+   "fieldname": "column_break_eare",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "raised_at",
+   "fieldtype": "Datetime",
+   "label": "Raised At"
+  },
+  {
+   "fieldname": "court_id",
+   "fieldtype": "Link",
+   "label": "Court Name",
+   "options": "Courts"
+  },
+  {
+   "fieldname": "case_number_najiz",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Case Number Najiz"
+  },
+  {
+   "fieldname": "power_of_attorney",
+   "fieldtype": "Link",
+   "label": "Power of Attorney",
+   "options": "Power of Attornies"
+  },
+  {
+   "fieldname": "lawyer_name",
+   "fieldtype": "Link",
+   "label": "Lawyer Name",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Case",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "case_parties_section",
+   "fieldtype": "Section Break",
+   "label": "Case Parties"
+  },
+  {
+   "fieldname": "claim_parties",
+   "fieldtype": "Table",
+   "options": "Claim Party"
+  },
+  {
+   "fieldname": "attachements_section",
+   "fieldtype": "Section Break",
+   "label": "Attachements"
+  },
+  {
+   "fieldname": "table_wesy",
+   "fieldtype": "Table",
+   "options": "Attachment"
+  },
+  {
+   "fieldname": "only_admin_with_privileges_can_achieve_cases_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_ckoz",
+   "fieldtype": "Column Break",
+   "label": "Archived cases only viewed by admins"
+  },
+  {
+   "default": "0",
+   "fieldname": "archived",
+   "fieldtype": "Check",
+   "label": "Archived",
+   "options": "True\nFalse",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "archive",
+   "fieldtype": "Button",
+   "label": "Click to Archive/UnArchived",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "column_break_cmzm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "label": "Reason for Archive",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "last_synced_comment_time",
+   "fieldtype": "Time",
+   "label": "last synced comment"
+  },
+  {
+   "fetch_from": "client_transaction.status",
+   "fieldname": "client_transaction_status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Client Transaction Status"
+  },
+  {
+   "fetch_from": "client_transaction.branch",
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "case_description",
+   "fieldtype": "Small Text",
+   "label": "Case Description"
+  },
+  {
+   "fetch_from": "client_transaction.client",
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Client Name",
+   "options": "Customer",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Courts Ruling",
+   "link_fieldname": "case_name"
+  },
+  {
+   "link_doctype": "Case Sessions",
+   "link_fieldname": "case_name"
+  },
+  {
+   "link_doctype": "Cases Enforcement",
+   "link_fieldname": "case_title"
+  }
+ ],
+ "modified": "2024-12-08 09:28:45.588967",
+ "modified_by": "Administrator",
+ "module": "Lsc Api",
+ "name": "Case",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Lawyer",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "queue_in_background": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

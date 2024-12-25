@@ -1,0 +1,219 @@
+{
+  "Home": "Home",
+  "About": "About Us",
+  "Packages": "Packages",
+  "Contact": "Contact Us",
+  "Services": "Services",
+  "Reviews": "Reviews",
+  "Signup": "Sign Up",
+  "Early Register": "Early Register",
+  "Login": "Login",
+  "Subscribe": "Subscribe Now",
+  "Cookies": "Cookies Note",
+  "CookiesMsg": "We are using cookies for better user experience",
+  "Accept": "Accept",
+  "Deny": "Deny",
+  "FormFill": {
+    "Welcome": "Welcome to Early Register",
+    "Waiting": "We will be there for you, soon.",
+    "Name": "Name",
+    "Email": "Email",
+    "Phone": "Phone",
+    "Nationality": "Nationality",
+    "City": "Current City in Saudi Arabia",
+    "Job": "Job",
+    "RecieveUpdates": "Recieve Updates",
+    "AcceptTerms": "Accept Terms of Service",
+    "AcceptTermsbtn": "Terms of Service"
+  },
+  "HeroSection": {
+    "title": "Welcome to Musanadah Legal Support Center",
+    "titleTextp1": "A professional team of legal and law experts",
+    "titleTextp2": "ready to assist you at any time...",
+    "heroBriefp1": "Musanadah Legal Support Center is the first digital platform which offers  legal service packages  in the Kingdom of Saudi Arabia in cooperation with its partner, 'Takamol Legal Services Company'.",
+    "heroBriefp2": "The center provides various packages including consultations, legal representation, and litigation, with a focus on protecting the rights of citizens and residents through customized legal solutions that meet their needs."
+  },
+  "AboutSection": {
+    "title": "What is Musanadah Legal Support Center?",
+    "titleTextp1": "Musanadah is the first digital services center in Saudi Arabia in the legal and judicial sectors, offering a list of digital services to be dealt with by a team of legal experts from Takamol, the center's strategic partner.",
+    "titleTextp2": "Musanadah Legal Support Center provides a range of specialized high-quality services, as part of its efforts to satisfy its clients and meet all their requirements.",
+    "vision": "Center's Vision:",
+    "visionText": "The first platform in Saudi Arabia to facilitate access to legal service packages through innovative technological solutions to enhance the quality of life and facilitate the achievement of social justice.",
+    "mission": "Center's Mission:",
+    "missionText": "Providing a reliable technological channel for clients to obtain legal service packages professionally, in innovative ways, at an economical cost, and with easy payment solutions that enhance the quality of life for clients.",
+    "requestService": "Request Service"
+  },
+  "ServicesSection": {
+    "consultation": {
+      "title": "Legal Consultation and Advice",
+      "content": "Providing advice and assistance to individuals regarding specific legal matters. Legal consultation includes explaining applicable laws and regulations, providing advice on the correct legal procedures, and guiding clients on how to deal with the legal issues they face."
+    },
+    "action": {
+      "title": "Supporting Legal Procedures",
+      "content": "Providing advice on how to deal with procedures that clients wish to implement or submit to the relevant authorities, such as writing letters or submitting requests on government platforms."
+    },
+    "judgement": {
+      "title": "Litigation and Legal Practice",
+      "content": "The legal process through which disputes between parties are resolved through the judicial system, and the legal representation of individuals before courts, authorities, and judicial or legal committees, and carrying out all necessary procedures or writings before these authorities, provided by licensed lawyers to practice these activities."
+    },
+    "settlement": {
+      "title": "Friendly Settlement, Reconciliation, and Agreement",
+      "content1": "Friendly settlement: is the process of resolving disputes between the disputing parties outside the framework of the court and in a peaceful manner.",
+      "content2": "Reconciliation: is a process aimed at resolving disputes and restoring good relations between the disputing parties."
+    },
+    "counseling": {
+      "title": "Submission Method",
+      "content": "Phone - Video - In-person"
+    },
+    "teaching": {
+      "title": "Legal Awareness and Education",
+      "content": "Programs and activities provided by the center to raise awareness among clients about the laws, rights, and legal obligations that affect their daily lives. This contributes to empowering clients to understand legal systems and contribute to achieving social justice through legal knowledge and awareness."
+    }
+  },
+  "PackagesSection": {
+    "SafeLife": {
+      "title": "Safe Life",
+      "price": "-",
+      "duration": "Annual",
+      "targetAudience": "Families (Saudi and Expat)",
+      "lang": "Languages",
+      "cons": "Consultations",
+      "supp": "Support and Assistance",
+      "famCase": "Family Cases",
+      "languages": "Arabic",
+      "consultationHours": "10 hours",
+      "support_and_assistance": "6 hours",
+      "familyCases": "4 cases",
+      "Cas": "Cases",
+      "cases": "2 hours"
+    },
+    "General": {
+      "name": "General",
+      "membership_type": "Annual",
+      "target_category": "(Doctors / Nurses / Medical Technicians / Engineers / Saudis / Residents)",
+      "lang": "Languages",
+      "cons": "Consultations",
+      "supp": "Support and Assistance",
+      "famCase": "Family cases",
+      "labCase": "Labor cases",
+      "profCase": "professional cases",
+      "languages": "Arabic",
+      "consultations": "20 hours",
+      "support_and_assistance": "12 hours",
+      "Cas": "Cases",
+      "cases": "4 hours"
+    },
+    "Relaxed": {
+      "name": "Relaxed",
+      "membership_type": "Annual",
+      "target_category": "Saudi workers in the private sector",
+      "lang": "Languages",
+      "cons": "Consultations",
+      "supp": "Support and Assistance",
+      "famCase": "Family cases",
+      "labCase": "Labor cases",
+      "profCase": "professional cases",
+      "languages": "Arabic",
+      "consultations": "10 hours",
+      "support_and_assistance": "6 hours",
+      "Cas": "Cases",
+      "cases": "2 hours"
+    },
+    "safetyA": {
+      "name": "My safety (A)",
+      "membership_type": "Annual",
+      "target_category": "Residents working in the Kingdom",
+      "lang": "Languages",
+      "cons": "Consultations",
+      "supp": "Support and Assistance",
+      "famCase": "Family cases",
+      "labCase": "Labor cases",
+      "profCase": "Professional cases",
+      "civCriCase": "Civil or Criminal Case",
+      "languages": "Arabic, English",
+      "consultations": "30 hours",
+      "support_and_assistance": "6 hours",
+      "labor_issues": "1 case",
+      "civil_or_criminal_case": "1 case"
+    },
+    "safetyB": {
+      "name": "My safety (B)",
+      "membership_type": "Annual",
+      "target_category": "Residents working in the Kingdom",
+      "lang": "Languages",
+      "cons": "Consultations",
+      "supp": "Support and Assistance",
+      "famCase": "Family cases",
+      "labCase": "Labor cases",
+      "profCase": "professional cases",
+      "languages": "Arabic, English",
+      "consultations": "15 hours",
+      "support_and_assistance": "3 hours",
+      "labor_issues": "1 case"
+    },
+    "safetyC": {
+      "name": "My safety (C)",
+      "membership_type": "Annual",
+      "target_category": "Residents working in the Kingdom",
+      "lang": "Languages",
+      "cons": "Consultations",
+      "supp": "Support and Assistance",
+      "famCase": "Family cases",
+      "labCase": "Labor cases",
+      "profCase": "professional cases",
+      "languages": "Arabic, English",
+      "consultations": "15 hours",
+      "support_and_assistance": "2 hours"
+    }
+  },
+  "ReviewsSection": {
+    "testimonial1": {
+      "name": "Ali Mustafa",
+      "testimonial": "The legal translation services provided by the office were accurate and fast. The professional translators translated our complex legal documents into English excellently. We are very satisfied with the quality of work."
+    },
+    "testimonial2": {
+      "name": "Hatim Al-Saadny",
+      "testimonial": "My experience with the authority was excellent. I found them to have all the legal knowledge and expertise I was looking for. Their prices were also very reasonable compared to the services provided."
+    },
+    "testimonial3": {
+      "name": "Mohamed Wael",
+      "testimonial": "I would like to thank the authority's team for their quick response to my request. I needed urgent legal advice, and they were able to provide it to me on the same day. I was surprised by the reasonable price that the authority offered for the legal translation service."
+    },
+    "testimonial4": {
+      "name": "Abdullah Abdel Majeed",
+      "testimonial": "I would like to commend the customer service at the authority. They were very cooperative and answered all my questions and inquiries patiently. Thank you for everything you have done."
+    }
+  },
+  "ContactSection": {
+    "name": "Your Name",
+    "email": "Your Email",
+    "subject": "Message Subject",
+    "message": "Message Content",
+    "sendMessageButton": "Send Message",
+    "namePlaceholder": "Enter your name...",
+    "emailPlaceholder": "Enter your email...",
+    "subjectPlaceholder": "Enter your message subject...",
+    "msgbody": "message..."
+  },
+  "Footer": {
+    "supportCenter": {
+      "title": "Musanadah Legal Support Center",
+      "description": "Musanadah Legal Support Center is the first entity to seek the actual implementation of digital transformation in the legal service packages sector in Saudi Arabia. Legal services are provided through Musanadah's strategic partner, Takamol Legal Services Company, a pioneer in legal services.",
+      "contact": {
+        "title": "Contact Us",
+        "message": "We are always happy to serve you"
+      }
+    },
+    "company": {
+      "title": "Company",
+      "links": {
+        "about": "About Us",
+        "packages": "Packages",
+        "contact": "Contact Us",
+        "termsAndConditions": "Terms and Conditions",
+        "inquiriesPolicy": "Inquiries policy",
+        "returnPolicy": "Return Policy"
+      }
+    }
+  }
+}

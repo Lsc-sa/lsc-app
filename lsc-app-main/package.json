@@ -1,0 +1,19 @@
+{
+  "name": "lsc_api",
+  "version": "1.0.0",
+  "description": "LCS API Integration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cd landing && yarn install && cd ../dashboard && yarn install",
+    "dev": "cd landing && yarn dev && cd ../dashboard && yarn dev",
+    "build": "cd landing && yarn build && cd ../dashboard && yarn build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io-client": "^4.5.1"
+
+  }
+}

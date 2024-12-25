@@ -1,0 +1,171 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:client",
+ "creation": "2024-11-03 14:08:19.877858",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "client",
+  "user",
+  "column_break_opaa",
+  "status",
+  "account_necessary_data_section",
+  "birth_date",
+  "custom_passport_number",
+  "location",
+  "column_break_jbjo",
+  "custom_nationality",
+  "custom_work_city",
+  "custom_customer_ssn_photo",
+  "custom_iqama_image",
+  "contract_section",
+  "contract",
+  "column_break_njlh",
+  "contract_status",
+  "power_of_attorny_section",
+  "power_of_attorny",
+  "column_break_ftxe",
+  "poa_expiry_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Client",
+   "options": "Customer",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_opaa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Incomplete\nComplete"
+  },
+  {
+   "fieldname": "account_necessary_data_section",
+   "fieldtype": "Section Break",
+   "label": "Account Necessary Data"
+  },
+  {
+   "fieldname": "column_break_jbjo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contract_section",
+   "fieldtype": "Section Break",
+   "label": "Contract"
+  },
+  {
+   "fieldname": "contract",
+   "fieldtype": "Link",
+   "label": "Contract",
+   "options": "Contract"
+  },
+  {
+   "fieldname": "column_break_njlh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contract_status",
+   "fieldtype": "Data",
+   "label": "Contract Status"
+  },
+  {
+   "fieldname": "power_of_attorny_section",
+   "fieldtype": "Section Break",
+   "label": "Power Of Attorny"
+  },
+  {
+   "fieldname": "power_of_attorny",
+   "fieldtype": "Link",
+   "label": "Power Of Attorny",
+   "options": "Power of Attornies"
+  },
+  {
+   "fieldname": "column_break_ftxe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "poa_expiry_date",
+   "fieldtype": "Date",
+   "label": "POA Expiry Date"
+  },
+  {
+   "fieldname": "birth_date",
+   "fieldtype": "Date",
+   "label": "Birthdate"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "custom_passport_number",
+   "fieldtype": "Data",
+   "label": "Passport Number"
+  },
+  {
+   "fieldname": "custom_nationality",
+   "fieldtype": "Data",
+   "label": "Nationality"
+  },
+  {
+   "fieldname": "custom_work_city",
+   "fieldtype": "Data",
+   "label": "Work City"
+  },
+  {
+   "fieldname": "custom_customer_ssn_photo",
+   "fieldtype": "Attach",
+   "label": "ID Photo"
+  },
+  {
+   "fieldname": "custom_iqama_image",
+   "fieldtype": "Attach",
+   "label": "Iqama Photo"
+  },
+  {
+   "fetch_from": "client.custom_user",
+   "fetch_if_empty": 1,
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-03 17:26:34.542329",
+ "modified_by": "Administrator",
+ "module": "Lsc Api",
+ "name": "Account Status Page",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

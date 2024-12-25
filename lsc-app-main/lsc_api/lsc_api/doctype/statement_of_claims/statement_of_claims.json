@@ -1,0 +1,113 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{power_of_attorney}-{####}",
+ "creation": "2024-09-05 16:38:16.428803",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "power_of_attorney",
+  "lawyer_name",
+  "statement_number_najiz",
+  "column_break_hyvq",
+  "case_category",
+  "court_name",
+  "claim_status",
+  "section_break_thec",
+  "statement_subject",
+  "statement_requests",
+  "section_break_jlqo",
+  "table_megn"
+ ],
+ "fields": [
+  {
+   "fieldname": "power_of_attorney",
+   "fieldtype": "Link",
+   "label": "Power of Attorney",
+   "options": "Power of Attornies"
+  },
+  {
+   "fieldname": "lawyer_name",
+   "fieldtype": "Link",
+   "label": "Lawyer Name",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "statement_number_najiz",
+   "fieldtype": "Data",
+   "label": "Statement Number in Najiz"
+  },
+  {
+   "fieldname": "column_break_hyvq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "case_category",
+   "fieldtype": "Link",
+   "label": "Case Category",
+   "options": "Case Categories"
+  },
+  {
+   "fieldname": "court_name",
+   "fieldtype": "Link",
+   "label": "Court Name",
+   "options": "Courts"
+  },
+  {
+   "fieldname": "claim_status",
+   "fieldtype": "Select",
+   "label": "Claim Status",
+   "options": "\u0637\u0644\u0628 \u062c\u062f\u064a\u062f\n\u0627\u0633\u062a\u0643\u0645\u0627\u0644 \u0627\u0644\u0646\u0648\u0627\u0642\u0635\n\u0645\u062d\u0627\u0644 \u0644\u0645\u0646\u0635\u0629 \u062a\u0631\u0627\u0636\u064a\n\u0645\u0644\u063a\u064a"
+  },
+  {
+   "fieldname": "section_break_thec",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "statement_subject",
+   "fieldtype": "Text Editor",
+   "label": "Statement Subject"
+  },
+  {
+   "fieldname": "statement_requests",
+   "fieldtype": "Text Editor",
+   "label": "Statement Requests"
+  },
+  {
+   "fieldname": "section_break_jlqo",
+   "fieldtype": "Section Break",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "table_megn",
+   "fieldtype": "Table",
+   "options": "Attachment"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-04 08:21:30.373213",
+ "modified_by": "Administrator",
+ "module": "Lsc Api",
+ "name": "Statement of Claims",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

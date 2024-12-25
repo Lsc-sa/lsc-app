@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{case_name}-{ruling_number_najiz}-{####}",
+ "creation": "2024-09-05 17:15:04.358208",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "case_ruling_section",
+  "case_name",
+  "type_of_ruling",
+  "judicial_department",
+  "date",
+  "number_of_judgement",
+  "ruling_text",
+  "section_break_npid",
+  "judgment_instrument"
+ ],
+ "fields": [
+  {
+   "fieldname": "case_ruling_section",
+   "fieldtype": "Section Break",
+   "label": "Court Ruling"
+  },
+  {
+   "fieldname": "case_name",
+   "fieldtype": "Link",
+   "label": "Case Title",
+   "options": "Case"
+  },
+  {
+   "fieldname": "type_of_ruling",
+   "fieldtype": "Select",
+   "label": "Ruling Type",
+   "options": "\u062f\u0631\u062c\u0629 \u0627\u0648\u0644\u0649\n\u0627\u0633\u062a\u0626\u0646\u0627\u0641\n\u062d\u0643\u0645 \u0646\u0642\u0636"
+  },
+  {
+   "fieldname": "judicial_department",
+   "fieldtype": "Link",
+   "label": "Judicial Department",
+   "options": "Judiciall Department"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "number_of_judgement",
+   "fieldtype": "Data",
+   "label": "Number of Judgement"
+  },
+  {
+   "fieldname": "ruling_text",
+   "fieldtype": "Small Text",
+   "label": "Ruling Text"
+  },
+  {
+   "fieldname": "section_break_npid",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "judgment_instrument",
+   "fieldtype": "Table",
+   "label": "Judgment Instrument",
+   "options": "Attachment"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-04 08:21:31.664943",
+ "modified_by": "Administrator",
+ "module": "Lsc Api",
+ "name": "Courts Ruling",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

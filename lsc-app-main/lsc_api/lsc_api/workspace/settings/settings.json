@@ -1,0 +1,166 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"GYNYrIkgq2\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Notifications Token\",\"col\":3}},{\"id\":\"YCvJfz81bm\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Notification Logs\",\"col\":3}},{\"id\":\"vki_GGiwd3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Google Calendar\",\"col\":3}},{\"id\":\"LoPI5DXTGc\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Energy Point Log\",\"col\":3}},{\"id\":\"pJNQixW9Yd\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"cD0OuT8awk\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Terms And Conditions\",\"col\":3}},{\"id\":\"rtdwwEfkpr\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Comment Settings\",\"col\":3}},{\"id\":\"B9RHwka_Hx\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Payment Settings\",\"col\":3}},{\"id\":\"lQMBlPZQHD\",\"type\":\"spacer\",\"data\":{\"col\":12}}]",
+ "creation": "2024-10-14 16:48:59.163000",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "setting-gear",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Settings",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Activity Log",
+   "link_count": 0,
+   "link_to": "Activity Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Access Log",
+   "link_count": 0,
+   "link_to": "Access Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Role Permissions Manager",
+   "link_count": 0,
+   "link_to": "permission-manager",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "User Permissions",
+   "link_count": 0,
+   "link_to": "User Permission",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Role Permission for Page and Report",
+   "link_count": 0,
+   "link_to": "Role Permission for Page and Report",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "User",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Permitted Documents For User",
+   "link_count": 0,
+   "link_to": "Permitted Documents For User",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "DocShare",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Document Share Report",
+   "link_count": 0,
+   "link_to": "Document Share Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "DocShare",
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-12-16 16:01:15.600448",
+ "modified_by": "omar@lsc-sa.net",
+ "module": "Lsc Api",
+ "name": "Settings",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "restrict_to_domain": "",
+ "roles": [
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "System Admin"
+  }
+ ],
+ "sequence_id": 45.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Comment Settings",
+   "link_to": "Comment Settings",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Payment Settings",
+   "link_to": "Payment Settings",
+   "type": "DocType"
+  },
+  {
+   "color": "Cyan",
+   "doc_view": "List",
+   "label": "Terms And Conditions",
+   "link_to": "Terms and Conditions",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Google Calendar",
+   "link_to": "Google Calendar",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Notification Logs",
+   "link_to": "Notification Log",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Red",
+   "doc_view": "List",
+   "label": "Energy Point Log",
+   "link_to": "Energy Point Log",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Notifications Token",
+   "link_to": "Notifications Token",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Settings"
+}

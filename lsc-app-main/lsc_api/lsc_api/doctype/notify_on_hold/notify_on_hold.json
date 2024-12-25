@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-27 15:37:02.000521",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "days_on_hold",
+  "designation",
+  "column_break_cghb",
+  "number_of_days_to_close_appointment",
+  "default_employee_appointment_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "days_on_hold",
+   "fieldtype": "Int",
+   "label": "Num of days On Hold"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "column_break_cghb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "number_of_days_to_close_appointment",
+   "fieldtype": "Float",
+   "label": "Number of Days to Close Appointment"
+  },
+  {
+   "fieldname": "default_employee_appointment_type",
+   "fieldtype": "Link",
+   "label": "Default Employee Appointment Type",
+   "options": "Employee Appointment Type"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-09-29 19:32:13.275689",
+ "modified_by": "Administrator",
+ "module": "Lsc Api",
+ "name": "Notify On Hold",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
